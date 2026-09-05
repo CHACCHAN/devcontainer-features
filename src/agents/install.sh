@@ -27,13 +27,16 @@ if [ -n "$PACKAGES" ]; then
 fi
 
 if [ "${CLAUDE}" = "true" ]; then
-    curl -fsSL https://claude.ai/install.sh | bash
+    su - "$_REMOTE_USER" -c \
+        'curl -fsSL https://claude.ai/install.sh | bash'
 fi
 
 if [ "${CODEX}" = "true" ]; then
-    curl -fsSL https://chatgpt.com/codex/install.sh | sh
+    su - "$_REMOTE_USER" -c \
+        'curl -fsSL https://chatgpt.com/codex/install.sh | sh'
 fi
 
 if [ "${ANTIGRAVITY}" = "true" ]; then
-    curl -fsSL https://antigravity.google/cli/install.sh | bash
+    su - "$_REMOTE_USER" -c \
+        'curl -fsSL https://antigravity.google/cli/install.sh | bash'
 fi

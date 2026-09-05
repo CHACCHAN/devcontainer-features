@@ -4,6 +4,10 @@
     "name": "AI agents",
     "description": "This package integrates CLI functionalities such as Claude, Codex, and Antigravity into a single package.",
 
+    "containerEnv": {
+        "PATH": "/home/vscode/.local/bin:${PATH}"
+    },
+
     "customizations": {
         "vscode": {
             "extensions": [
