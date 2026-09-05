@@ -1,8 +1,19 @@
 {
-    "id": "my-bind",
+    "id": "my-assets",
     "version": "1.0.0",
-    "name": "My assets",
+    "name": "MyAssets",
     "description": "My personal synchronization settings.",
+
+    "dependsOn": {
+        "ghcr.io/chacchan/devcontainer-features/agents:latest": {},
+        "ghcr.io/devcontainers/features/docker-outside-of-docker:1": {
+            "moby": false
+        },
+        "ghcr.io/devcontainers-extra/features/apt-packages:1": {
+            "packages": "vim,locales,bubblewrap"
+        },
+        "ghcr.io/thediveo/devcontainer-features/lazygit:0": {}
+    },
 
     "mounts": [
         {
