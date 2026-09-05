@@ -1,6 +1,6 @@
 {
     "id": "agents",
-    "version": "1.0.1",
+    "version": "1.0.2",
     "name": "AI agents",
     "description": "This package integrates CLI functionalities such as Claude, Codex, and Antigravity into a single package.",
 

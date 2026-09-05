@@ -33,7 +33,7 @@ fi
 
 if [ "${CODEX}" = "true" ]; then
     su - "$_REMOTE_USER" -c \
-        'curl -fsSL https://chatgpt.com/codex/install.sh | sh'
+        'curl -fsSL https://chatgpt.com/codex/install.sh | CODEX_HOME="$HOME/.local/share/codex-cli" CODEX_NON_INTERACTIVE=1 sh'
 fi
 
 if [ "${ANTIGRAVITY}" = "true" ]; then
