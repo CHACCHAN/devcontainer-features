@@ -40,3 +40,7 @@ if [ "${ANTIGRAVITY}" = "true" ]; then
     su - "$_REMOTE_USER" -c \
         'curl -fsSL https://antigravity.google/cli/install.sh | bash'
 fi
+
+if [ "${PLAYWRIGHT}" = "true" ]; then
+    npm install -g @playwright/cli@latest
+fi

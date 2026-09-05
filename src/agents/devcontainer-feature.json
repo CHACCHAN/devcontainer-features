@@ -1,8 +1,14 @@
 {
     "id": "agents",
-    "version": "1.0.2",
+    "version": "1.0.3",
     "name": "AI agents",
     "description": "This package integrates CLI functionalities such as Claude, Codex, and Antigravity into a single package.",
+
+    "dependsOn": {
+        "ghcr.io/devcontainers/features/node:2": {
+            "version": "lts"
+        }
+    },
 
     "containerEnv": {
         "PATH": "/home/vscode/.local/bin:${PATH}"
@@ -33,6 +39,11 @@
             "type": "boolean",
             "default": true,
             "description": "Install Antigravity CLI"
+        },
+        "playwright": {
+            "type": "boolean",
+            "default": true,
+            "description": "Install Playwright CLI for browser automation"
         }
     }
 }
