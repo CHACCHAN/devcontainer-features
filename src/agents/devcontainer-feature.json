@@ -1,0 +1,24 @@
+{
+    "id": "agents",
+    "version": "1.0.0",
+    "name": "AI agents",
+    "description": "This package integrates CLI functionalities such as Claude, Codex, and Antigravity into a single package.",
+
+    "options": {
+        "claude": {
+            "type": "boolean",
+            "default": true,
+            "description": "Install Claude Code"
+        },
+        "codex": {
+            "type": "boolean",
+            "default": true,
+            "description": "Install Codex CLI"
+        },
+        "antigravity": {
+            "type": "boolean",
+            "default": true,
+            "description": "Install Antigravity CLI"
+        }
+    }
+}
