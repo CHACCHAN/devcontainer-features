@@ -21,7 +21,7 @@ jobs:
         uses: actions/checkout@v4
       
       - name: Publish Features
-        uses: devcontainer/action@v1
+        uses: devcontainers/action@v1
         with:
           publish-feature: "true"
           base-path-to-features: "./src"
