@@ -1,7 +1,3 @@
-# devcontainer-features
-
-AI コーディングエージェントの CLI をまとめて導入する [Dev Container Features](https://containers.dev/implementors/features/) のコレクションです。
-
 ## 公開
 
 `main` に push して `src/**` に変更があると、[`devcontainers/action`](https://github.com/devcontainers/action) が `src/` 配下の各 Feature を GHCR に公開します。Actions の `workflow_dispatch` から手動実行することもできます。
