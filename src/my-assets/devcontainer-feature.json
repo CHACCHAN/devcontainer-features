@@ -15,6 +15,12 @@
         "ghcr.io/thediveo/devcontainer-features/lazygit:0": {}
     },
 
+    "containerEnv": {
+        "LANG": "en_US.UTF-8",
+        "LANGUAGE": "en_US:en",
+        "LC_ALL": "en_US.UTF-8"
+    },
+
     "mounts": [
         {
             "source": "${localEnv:HOME}/.ssh",

@@ -4,6 +4,16 @@
     "name": "AI agents",
     "description": "This package integrates CLI functionalities such as Claude, Codex, and Antigravity into a single package.",
 
+    "customizations": {
+        "vscode": {
+            "extensions": [
+                "anthropic.claude-code",
+                "openai.chatgpt",
+                "google.google-antigravity"
+            ]
+        }
+    },
+
     "options": {
         "claude": {
             "type": "boolean",
