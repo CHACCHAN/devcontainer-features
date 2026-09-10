@@ -1,8 +1,8 @@
 {
     "id": "agents",
-    "version": "1.0.3",
+    "version": "1.0.4",
     "name": "AI agents",
-    "description": "This package integrates CLI functionalities such as Claude, Codex, and Antigravity into a single package.",
+    "description": "This package integrates CLI functionalities such as Claude, Codex, Antigravity, and OpenCode into a single package.",
 
     "dependsOn": {
         "ghcr.io/devcontainers/features/node:2": {
@@ -19,7 +19,8 @@
             "extensions": [
                 "anthropic.claude-code",
                 "openai.chatgpt",
-                "google.google-antigravity"
+                "google.google-antigravity",
+                "sst-dev.opencode"
             ]
         }
     },
@@ -39,6 +40,11 @@
             "type": "boolean",
             "default": true,
             "description": "Install Antigravity CLI"
+        },
+        "opencode": {
+            "type": "boolean",
+            "default": true,
+            "description": "Install OpenCode CLI"
         },
         "playwright": {
             "type": "boolean",

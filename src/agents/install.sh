@@ -41,6 +41,11 @@ if [ "${ANTIGRAVITY}" = "true" ]; then
         'curl -fsSL https://antigravity.google/cli/install.sh | bash'
 fi
 
+if [ "${OPENCODE}" = "true" ]; then
+    su - "$_REMOTE_USER" -c \
+        'curl -fsSL https://opencode.ai/install | bash'
+fi
+
 if [ "${PLAYWRIGHT}" = "true" ]; then
     npm install -g @playwright/cli@latest
 fi
