@@ -38,7 +38,7 @@ fi
 
 if [ "${ANTIGRAVITY}" = "true" ]; then
     su - "$_REMOTE_USER" -c \
-        'curl -fsSL https://antigravity.google/cli/install.sh | bash'
+        'curl --compressed -fsSL https://antigravity.google/cli/install.sh | bash'
 fi
 
 if [ "${OPENCODE}" = "true" ]; then
