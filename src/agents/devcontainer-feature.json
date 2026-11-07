@@ -1,14 +1,8 @@
 {
     "id": "agents",
-    "version": "1.0.7",
+    "version": "1.0.9",
     "name": "AI agents",
     "description": "This package integrates CLI functionalities such as Claude, Codex, Antigravity, OpenCode, and Mistral into a single package.",
-
-    "dependsOn": {
-        "ghcr.io/devcontainers/features/node:2": {
-            "version": "lts"
-        }
-    },
 
     "containerEnv": {
         "PATH": "/home/vscode/.local/bin:/home/vscode/.mistral/bin:${PATH}"
@@ -52,10 +46,11 @@
             "default": true,
             "description": "Install Mistral CLI"
         },
-        "playwright": {
-            "type": "boolean",
-            "default": true,
-            "description": "Install Playwright CLI for browser automation"
+        "browser": {
+            "type": "string",
+            "default": "0.41.2",
+            "proposals": ["0.41.2", "none"],
+            "description": "agent-browser version (X.Y.Z or vX.Y.Z). Installs matching browser skills for enabled agents. Set none to disable both."
         }
     }
 }
