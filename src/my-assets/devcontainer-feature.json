@@ -1,6 +1,6 @@
 {
     "id": "my-assets",
-    "version": "1.0.2",
+    "version": "1.0.3",
     "name": "MyAssets",
     "description": "My personal synchronization settings.",
 
@@ -16,9 +16,10 @@
     },
 
     "containerEnv": {
-        "LANG": "en_US.UTF-8",
-        "LANGUAGE": "en_US:en",
-        "LC_ALL": "en_US.UTF-8"
+        "LANG": "ja_JP.UTF-8",
+        "LANGUAGE": "ja_JP:ja",
+        "LC_ALL": "ja_JP.UTF-8",
+        "TZ": "Asia/Tokyo"
     },
 
     "mounts": [
@@ -60,6 +61,11 @@
         {
             "source": "${localEnv:HOME}/.config/opencode",
             "target": "/home/vscode/.config/opencode",
+            "type": "bind"
+        },
+        {
+            "source": "${localEnv:HOME}/.vibe",
+            "target": "/home/vscode/.vibe",
             "type": "bind"
         }
     ],

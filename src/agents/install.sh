@@ -5,7 +5,7 @@ PACKAGES=""
 
 command -v curl >/dev/null 2>&1 || PACKAGES="$PACKAGES curl"
 
-if [ "${CLAUDE}" = "true" ] || [ "${ANTIGRAVITY}" = "true" ]; then
+if [ "${CLAUDE}" = "true" ] || [ "${ANTIGRAVITY}" = "true" ] || [ "${OPENCODE}" = "true" ] || [ "${MISTRAL}" = "true" ]; then
     command -v bash >/dev/null 2>&1 || PACKAGES="$PACKAGES bash"
 fi
 
@@ -44,6 +44,11 @@ fi
 if [ "${OPENCODE}" = "true" ]; then
     su - "$_REMOTE_USER" -c \
         'curl -fsSL https://opencode.ai/install | bash'
+fi
+
+if [ "${MISTRAL}" = "true" ]; then
+    su - "$_REMOTE_USER" -c \
+        'curl -fsSL https://mistral.ai/cli/install.sh | bash'
 fi
 
 if [ "${PLAYWRIGHT}" = "true" ]; then
