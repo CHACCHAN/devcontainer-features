@@ -1,6 +1,6 @@
 {
     "id": "my-assets",
-    "version": "1.0.4",
+    "version": "1.0.5",
     "name": "MyAssets",
     "description": "My personal synchronization settings.",
 
@@ -10,9 +10,8 @@
             "moby": false
         },
         "ghcr.io/devcontainers-extra/features/apt-packages:1": {
-            "packages": "vim,locales,bubblewrap"
-        },
-        "ghcr.io/thediveo/devcontainer-features/lazygit:0": {}
+            "packages": "vim,locales,bubblewrap,tmux,iputils-ping,dnsutils,tcpdump"
+        }
     },
 
     "containerEnv": {
