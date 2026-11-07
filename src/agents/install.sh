@@ -48,7 +48,7 @@ fi
 
 if [ "${MISTRAL}" = "true" ]; then
     su - "$_REMOTE_USER" -c \
-        'curl -fsSL https://mistral.ai/cli/install.sh | bash'
+        'set -e; export PATH="$HOME/.local/bin:$PATH"; installer=$(curl -fsSL https://mistral.ai/vibe/install.sh); bash -c "$installer"; command -v vibe'
 fi
 
 BROWSER_VERSION="${BROWSER:-0.41.2}"

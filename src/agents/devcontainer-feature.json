@@ -1,11 +1,11 @@
 {
     "id": "agents",
-    "version": "1.0.9",
+    "version": "1.0.10",
     "name": "AI agents",
     "description": "This package integrates CLI functionalities such as Claude, Codex, Antigravity, OpenCode, and Mistral into a single package.",
 
     "containerEnv": {
-        "PATH": "/home/vscode/.local/bin:/home/vscode/.mistral/bin:${PATH}"
+        "PATH": "/home/vscode/.local/bin:${PATH}"
     },
 
     "customizations": {
@@ -44,7 +44,7 @@
         "mistral": {
             "type": "boolean",
             "default": true,
-            "description": "Install Mistral CLI"
+            "description": "Install Mistral Vibe CLI"
         },
         "browser": {
             "type": "string",
